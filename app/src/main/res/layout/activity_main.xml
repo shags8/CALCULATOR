@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/textView"
@@ -13,6 +14,7 @@
         android:layout_height="250dp"
         android:text="Text"
         android:textSize="48sp"
+        android:paddingEnd="10dp"
         android:gravity="end|bottom"/>
 
     <LinearLayout
@@ -26,39 +28,42 @@
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/clear"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:text="C"
+            android:background="@drawable/circular_btn2"
             android:gravity="center"
-            android:textSize="30sp"
-            android:background="@drawable/circular_btn"/>
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/percent"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="@drawable/circular_btn2"
+            android:textColor="@color/white"
             android:text="%"
-            android:textSize="30sp"
-            android:background="@drawable/circular_btn"/>
+            android:textSize="30sp" />
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/back"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:background="@drawable/circular_btn"
+            android:background="@drawable/circular_btn2"
+            android:textColor="@color/white"
             android:text="BACK"
             android:textSize="20sp" />
 
@@ -66,21 +71,25 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/divide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:text="/"
             android:textSize="30sp"
-            android:background="@drawable/circular_btn"
-            android:backgroundTint="@color/dark_grey"
+            android:background="@drawable/circular_btn2"
+            android:textColor="@color/white"
             />
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,91 +101,133 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button7"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:text="7"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button8"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:text="8"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button9"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:text="9"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/multiply"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:text="X"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@drawable/circular_btn2"
+            android:textColor="@color/white"/>
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
     </LinearLayout>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_weight="1">
 
-
-        <Button
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="4"
-            android:textSize="25sp"/>
-
-        <Button
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="5"
-            android:textSize="25sp"/>
-
-        <Button
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="6"
-            android:textSize="25sp"/>
-        <Button
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/subtract"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="-"
-            android:textSize="45sp"/>
+            android:textSize="45sp"
+            android:background="@drawable/circular_btn2"
+            android:textColor="@color/white"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -185,37 +236,76 @@
         android:layout_weight="1">
 
 
-        <Button
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="1"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
 
-        <Button
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="2"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
 
-        <Button
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="3"
-            android:textSize="25sp"/>
-        <Button
+            android:textSize="25sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/add"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="+"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@drawable/circular_btn2"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -224,38 +314,73 @@
         android:layout_weight="1">
 
 
-        <Button
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/zero2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="00"
             android:textSize="20sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"
             />
 
-        <Button
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/zero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="0"
-            android:textSize="20sp"/>
-        <Button
+            android:textSize="20sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/dot"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="."
             android:gravity="top|center"
-            android:textSize="40sp"/>
+            android:textSize="40sp"
+            android:background="@drawable/circular_btn"
+            android:textColor="@color/white"/>
 
-        <Button
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/EQUAL"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:text="="
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/circular_btn"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
