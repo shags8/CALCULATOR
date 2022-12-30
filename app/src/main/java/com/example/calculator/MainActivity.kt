@@ -6,6 +6,7 @@ import android.renderscript.ScriptGroup
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     var lastNumeric = false
@@ -141,6 +142,11 @@ class MainActivity : AppCompatActivity() {
     }
     fun back(view: View){
         var input = findViewById<TextView>(R.id.textView)
-        input.text = input.text.toString().substring(0, input.text.length - 1  )
+        if(input.text.isNotEmpty()){
+        input.text = input.text.toString().substring(0, input.text.length - 1  )}
+        else {
+            Toast.makeText(this,"no input", Toast.LENGTH_SHORT).show()
+        }
+
     }
 }
